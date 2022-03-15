@@ -83,7 +83,7 @@ analytics:
 # Site Author
 author:
   name             : "Anton Tcholakov"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/images/avatar.jpg"
   bio              : "Building next-generation tools for experts in science and engineering. Experienced in C#, F#, and C++, but also fond of Rust and Clojure."
   location         : "London, UK"
   links:
