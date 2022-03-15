@@ -31,12 +31,12 @@ words_per_minute         : 200
 comments:
   provider               : "giscus"
   giscus:
-    repo_id              : # Shown during giscus setup at https://giscus.app
-    category_name        : # Full text name of the category
-    category_id          : # Shown during giscus setup at https://giscus.app
-    discussion_term      : # "pathname" (default), "url", "title", "og:title"
-    reactions_enabled    : # '1' for enabled (default), '0' for disabled
-    theme                : "dark"
+    repo_id              : "R_kgDOHAaX0Q" # Shown during giscus setup at https://giscus.app
+    category_name        : "General" # Full text name of the category
+    category_id          : "DIC_kwDOHAaX0c4COHNh" # Shown during giscus setup at https://giscus.app
+    discussion_term      : "pathname" # "pathname" (default), "url", "title", "og:title"
+    reactions_enabled    : '1' # '1' for enabled (default), '0' for disabled
+    theme                : "dark_dimmed"
 reCaptcha:
   siteKey                :
   secret                 :
@@ -240,6 +240,6 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
-      related: true
+      related: false
