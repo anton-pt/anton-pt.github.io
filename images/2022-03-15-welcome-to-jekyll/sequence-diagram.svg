@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="268.75px" preserveAspectRatio="none" style="width:346px;height:268px;background:#00000000;" version="1.1" viewBox="0 0 346 268" width="346.875px" zoomAndPan="magnify"><defs/><g><line style="stroke:#555555;stroke-width:0.5208333333333334;stroke-dasharray:5.0,5.0;" x1="73.9583" x2="73.9583" y1="45.8008" y2="224.8372"/><line style="stroke:#555555;stroke-width:0.5208333333333334;stroke-dasharray:5.0,5.0;" x1="316.1458" x2="316.1458" y1="45.8008" y2="224.8372"/><rect height="39.5508" rx="4.1667" ry="4.1667" style="stroke:#55B2DE;stroke-width:0.5208333333333334;fill:none;" width="55.2083" x="46.875" y="5.2083"/><text fill="#2A9FD6" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="30.2083" x="59.375" y="29.3111">Alice</text><rect height="39.5508" rx="4.1667" ry="4.1667" style="stroke:#55B2DE;stroke-width:0.5208333333333334;fill:none;" width="55.2083" x="46.875" y="223.7956"/><text fill="#2A9FD6" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="30.2083" x="59.375" y="247.8984">Alice</text><rect height="39.5508" rx="4.1667" ry="4.1667" style="stroke:#55B2DE;stroke-width:0.5208333333333334;fill:none;" width="50" x="291.1458" y="5.2083"/><text fill="#2A9FD6" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="25" x="303.6458" y="29.3111">Bob</text><rect height="39.5508" rx="4.1667" ry="4.1667" style="stroke:#55B2DE;stroke-width:0.5208333333333334;fill:none;" width="50" x="291.1458" y="223.7956"/><text fill="#2A9FD6" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="25" x="303.6458" y="247.8984">Bob</text><polygon fill="#2A9FD6" points="303.6458,83.2682,314.0625,87.4349,303.6458,91.6016,307.8125,87.4349" style="stroke:#2A9FD6;stroke-width:1.0416666666666667;"/><line style="stroke:#2A9FD6;stroke-width:3.125;" x1="74.4792" x2="309.8958" y1="87.4349" y2="87.4349"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="82.2917" x="86.9792" y="77.1952">Test Request</text><polygon fill="#2A9FD6" points="85.9375,122.819,75.5208,126.9857,85.9375,131.1523,81.7708,126.9857" style="stroke:#2A9FD6;stroke-width:1.0416666666666667;"/><line style="stroke:#2A9FD6;stroke-width:3.125;stroke-dasharray:2.0,2.0;" x1="79.6875" x2="315.1042" y1="126.9857" y2="126.9857"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="154.1667" x="97.3958" y="116.746">Authentication Response</text><polygon fill="#2A9FD6" points="303.6458,162.3698,314.0625,166.5365,303.6458,170.7031,307.8125,166.5365" style="stroke:#2A9FD6;stroke-width:1.0416666666666667;"/><line style="stroke:#2A9FD6;stroke-width:3.125;" x1="74.4792" x2="309.8958" y1="166.5365" y2="166.5365"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="194.7917" x="86.9792" y="156.2968">Another authentication Request</text><polygon fill="#2A9FD6" points="85.9375,201.9206,75.5208,206.0872,85.9375,210.2539,81.7708,206.0872" style="stroke:#2A9FD6;stroke-width:1.0416666666666667;"/><line style="stroke:#2A9FD6;stroke-width:3.125;stroke-dasharray:2.0,2.0;" x1="79.6875" x2="315.1042" y1="206.0872" y2="206.0872"/><text fill="#FFFFFF" font-family="&quot;Verdana&quot;" font-size="12.5" lengthAdjust="spacing" textLength="206.25" x="97.3958" y="195.8476">Another authentication Response</text><!--MD5=[752828b54d5834f43cb8e1ab237452f4]
+@startuml
+!include https://raw.githubusercontent.com/bschwarz/puml-themes/master/themes/cyborg-outline/puml-theme-cyborg-outline.puml
+
+Alice -> Bob: Test Request
+Bob - -> Alice: Authentication Response
+
+Alice -> Bob: Another authentication Request
+Alice <- - Bob: Another authentication Response
+@enduml
+
+@startuml
+
+
+
+skinparam backgroundColor transparent
+skinparam useBetaStyle false
+
+
+
+
+
+
+
+skinparam defaultFontName       "Verdana"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           8
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               5
+skinparam ArrowColor            #ADAFAE
+skinparam stereotype {
+    CBackgroundColor #777777
+    CBorderColor #444444
+    ABackgroundColor #5F8F00
+    ABorderColor #92C233
+    IBackgroundColor #a30000
+    IBorderColor #D63333
+    EBackgroundColor #cc6d00
+    EBorderColor #FFA033
+    NBackgroundColor #7a29a3
+    NBorderColor #AD5CD6
+}
+skinparam title {
+	FontColor	                 #2A9FD6
+	BorderColor	                 #777777
+	FontSize	    	         20
+	BorderRoundCorner            8
+	BorderThickness 	         1
+	BackgroundColor              transparent
+}
+
+skinparam legend {
+	BackgroundColor transparent
+	BorderColor #777777
+	FontColor #ADAFAE
+}
+
+skinparam swimlane {
+	BorderColor #9933CC
+	BorderThickness 2
+	TitleBackgroundColor  #444444-#555
+	TitleFontColor #2A9FD6
+}
+
+
+skinparam activity {
+		FontColor #2A9FD6
+	BorderColor #55B2DE
+	BackgroundColor transparent
+	BarColor #77B300
+	StartColor #9933CC
+	EndColor #9933CC
+	DiamondBackgroundColor transparent
+  	DiamondBorderColor #777777
+  	DiamondFontColor #777777
+}
+
+
+skinparam participant {
+		FontColor #2A9FD6
+	BorderColor #55B2DE
+	BackgroundColor transparent
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #2A9FD6
+	BorderColor #55B2DE
+	BackgroundColor transparent
+	FontColor #2A9FD6
+}
+
+
+skinparam arrow {
+	Thickness 3
+	Color #2A9FD6
+	FontColor #FFF
+}
+
+
+skinparam sequence {
+	BorderColor #2A9FD6
+	TitleFontColor #2A9FD6
+	BackgroundColor transparent
+	StartColor #2A9FD6
+	EndColor #2A9FD6
+	BoxBackgroundColor transparent
+	BoxBorderColor #ADAFAE
+	BoxFontColor #ADAFAE
+	DelayFontColor #ADAFAE
+	LifeLineBorderColor #555
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor transparent
+	GroupBorderColor #ADAFAE
+	GroupFontColor #ADAFAE
+	GroupHeaderFontColor #9933CC
+	GroupBackgroundColor transparent
+	GroupBodyBackgroundColor transparent
+	GroupHeaderBackgroundColor transparent
+	DividerBackgroundColor transparent
+    DividerBorderColor #ADAFAE
+    DividerBorderThickness 2
+    DividerFontColor #ADAFAE
+	ReferenceBackgroundColor transparent
+	ReferenceBorderColor #ADAFAE
+	ReferenceFontColor #ADAFAE
+	ReferenceHeaderFontColor #9933CC
+	ReferenceHeaderBackgroundColor transparent
+	StereotypeFontColor #2A9FD6
+}
+
+
+skinparam partition {
+	BorderColor #2A9FD6
+	FontColor #2A9FD6
+	BackgroundColor transparent
+}
+
+
+skinparam collections {
+		FontColor #2A9FD6
+	BorderColor #55B2DE
+	BackgroundColor transparent
+}
+
+
+skinparam control {
+		FontColor #2A9FD6
+	BorderColor #55B2DE
+	BackgroundColor transparent
+	FontColor #2A9FD6
+}
+
+
+skinparam entity {
+		FontColor #2A9FD6
+	BorderColor #55B2DE
+	BackgroundColor transparent
+	FontColor #2A9FD6
+}
+
+
+skinparam boundary {
+		FontColor #2A9FD6
+	BorderColor #55B2DE
+	BackgroundColor transparent
+	FontColor #2A9FD6
+}
+
+
+skinparam agent {
+	BackgroundColor transparent
+	BorderColor #cc6d00
+	FontColor #ADAFAE
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor transparent
+	BorderColor #AD5CD6
+	FontColor #AD5CD6
+}
+
+
+skinparam artifact {
+	BackgroundColor transparent
+	BorderColor #BDBFBE
+	FontColor #BDBFBE
+}
+
+
+skinparam component {
+		FontColor #2A9FD6
+	BorderColor #55B2DE
+	BackgroundColor transparent
+}
+
+
+skinparam interface {
+	BackgroundColor  transparent
+	BorderColor  #CC0000
+	FontColor #ADAFAE
+}
+
+
+skinparam storage {
+	BackgroundColor transparent
+  	BorderColor #FFA033
+	FontColor #FF8800
+}
+
+
+skinparam node {
+	BackgroundColor  transparent
+	BorderColor #ADAFAE
+	FontColor #ADAFAE
+}
+
+
+skinparam cloud {
+	BackgroundColor transparent
+	BorderColor #F2FCFE
+	FontColor #ADAFAE
+}
+
+
+skinparam database {
+		FontColor #2A9FD6
+	BorderColor #55B2DE
+	BackgroundColor transparent
+	FontColor #2A9FD6
+}
+
+
+
+skinparam class {
+		FontColor #2A9FD6
+	BorderColor #55B2DE
+	BackgroundColor transparent
+        FontColor #222
+	HeaderBackgroundColor #227FAB
+	StereotypeFontColor #ADAFAE
+	BorderThickness 1
+	AttributeFontColor #ADAFAE
+	AttributeFontSize 11
+}
+
+
+skinparam object {
+		FontColor #2A9FD6
+	BorderColor #55B2DE
+	BackgroundColor transparent
+	StereotypeFontColor #ADAFAE
+	BorderThickness 1
+	AttributeFontColor #777777
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #2A9FD6
+	BorderColor #55B2DE
+	BackgroundColor transparent
+	BorderThickness 2
+	StereotypeFontColor #2A9FD6
+}
+
+
+skinparam rectangle {
+		FontColor #2A9FD6
+	BorderColor #55B2DE
+	BackgroundColor transparent
+	BorderThickness 2
+	StereotypeFontColor #2A9FD6
+}
+
+
+skinparam package {
+	BackgroundColor transparent
+  	BorderColor #2A9FD6
+	FontColor #2A9FD6
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor transparent
+  	BorderColor #FF8800
+	FontColor #FF8800
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor transparent
+  	BorderColor #9933CC
+	FontColor #9933CC
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #2A9FD6
+	BorderColor #55B2DE
+	BackgroundColor transparent
+	StartColor #9933CC
+	EndColor #9933CC
+	AttributeFontColor #777777
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #2A9FD6
+	BorderColor #55B2DE
+	BackgroundColor transparent
+}
+
+
+skinparam card {
+	BackgroundColor transparent
+	BorderColor #9933CC
+	FontColor #9933CC
+}
+
+
+skinparam file {
+	BackgroundColor transparent
+	BorderColor #555
+	FontColor #555
+}
+
+
+skinparam stack {
+		FontColor #2A9FD6
+	BorderColor #55B2DE
+	BackgroundColor transparent
+}
+
+Alice -> Bob: Test Request
+Bob - -> Alice: Authentication Response
+
+Alice -> Bob: Another authentication Request
+Alice <- - Bob: Another authentication Response
+@enduml
+
+PlantUML version 1.2022.3beta2(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
