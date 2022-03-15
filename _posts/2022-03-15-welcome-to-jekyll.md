@@ -29,7 +29,7 @@ namespace HelloWorld
 
 ### Image tests
 
-TODO
+![Test sequence diagram](/images//2022-03-15-welcome-to-jekyll/sequence-diagram.svg)
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
